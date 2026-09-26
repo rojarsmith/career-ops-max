@@ -32,6 +32,23 @@ learned. Newest entry on top. Keep the zh-TW twin in sync in the same commit.
 
 ## Entries
 
+### 2026-09-26 — Target company list from market-cap rankings
+
+- **Stage:** sourcing
+- **Done:** Took the top 50 by market cap in Taiwan and the US (companiesmarketcap.com) and filtered them on four
+  criteria: a site in an acceptable Taiwan location (US companies: Taiwan branch only), software / AI / embedded
+  work, plausible manager-level roles, and coding-test risk. Added an embedded-HMI / display / industrial-AI
+  supplement that market cap misses. About 30 companies went into the private `portals.yml` in three tiers,
+  with a Taiwan-only `location_filter`.
+- **Found:** from the cloud, Workday boards (NVIDIA, Intel, Applied Materials) and amazon.jobs answer plain HTTP,
+  so `scan.mjs` works on them. NVIDIA's global board takes about 8 minutes. Microsoft's board refused, and the AMD
+  and Dell Workday guesses failed. Taiwan companies mostly recruit via 104 (blocked here), so they use
+  web-search entries over 104 / LinkedIn postings.
+- **Learned:** market cap alone is a poor filter. Half of each list is finance, energy, retail or pharma, and the
+  closest domain fits (embedded HMI, industrial computing, displays) sit outside the top 50. US big-tech Taiwan
+  branches carry the highest coding-test risk.
+- **Next:** first full scan, then triage the new postings.
+
 ### 2026-09-26 — Three more TSMC postings, reports #005–#007
 
 - **Stage:** evaluation
