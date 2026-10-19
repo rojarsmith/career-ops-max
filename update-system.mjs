@@ -298,6 +298,7 @@ const SYSTEM_PATHS = [
 
   'reserve-report-num.mjs',
   'scan.mjs',
+  'migrate-scan-runs.mjs',
   'pipeline-lock.mjs',
   'portal-health-lock.mjs',
   'classify-tier.mjs',
@@ -331,6 +332,7 @@ const SYSTEM_PATHS = [
   'detect-reposts.mjs',
   'rank-pipeline.mjs',
   'discover-ats.mjs',
+  'discover-new-companies.mjs',
   'check-table-freshness.mjs',
   'check-jd-archive.mjs',
   'fingerprint-core.mjs',
